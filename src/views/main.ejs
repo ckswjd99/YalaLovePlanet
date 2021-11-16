@@ -12,59 +12,67 @@
 </head>
 <body>
     <div class="full">
-        <div class="content">
-            <div class="content_row">
-                <div id="dashboard_welcome" class="dashboard_box">
-                    <div class="dashboard_title">Jessica, 안녕하세요.</div>
-                    <div class="dashboard_paragraph">
-                        오늘의 날씨는 흐림, 19도 입니다.<br>
-                        일간 이용 고객 수는 36명으로, 지난 달 같은 시기보다 3명 적습니다.<br>
-                        Love Planet 직원 평가 시스템에 따르면 앞으로 5명의 고객을 더 유치해야 다음 달 Platinum 등급에 도달할 수 있습니다.
-
-                    </div>
+        <div class="menu">
+            <div class="menu_box">
+                    
+                <div class="menu_top">
+                    <p id="menu_top_text">🤍 Love Planet</p>
+                    <img id="menu_top_image" src="images/jessica_temp.png">
                 </div>
-                <div id="dashboard_lovecoin" class="dashboard_box">
-                    <div class="dashboard_title">보유 LOVE COIN</div>
-                    <div class="dashboard_paragraph"></div>
-                </div>
-            </div>
-            <div class="content_row">
-                <div id="dashboard_reviews" class="dashboard_box">
-                    <div class="dashboard_title">최근 고객 리뷰</div>
-                    <div class="dashboard_paragraph"></div>
-                </div>
-                <div id="dashboard_alarms" class="dashboard_box">
-                    <div class="dashboard_title">관리자 알림</div>
-                    <div class="dashboard_paragraph"></div>
+                <div class="menu_list">
+                    <ul id="menu_list_wrapper">
+                        <li>대시보드</li>
+                        <li>관리자 공지</li>
+                        <hr>
+                        <li>리뷰 관리</li>
+                        <li>러브코인 관리</li>
+                        <li>회원 관리</li>
+                        <hr>
+                        <li>시스템 관리 자료</li>
+                        <li>시스템 피드백</li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <div class="menu">
-            <div class="menu_box">
-                <div class="menu_content">
-                    
-                    <div class="menu_logo">
-                        <img src="">
-                        <p id="menu_logo_text">🤍 Love Planet</p>
+        <div class="content">
+            <div class="content_header">
+                안녕하세요, Jessica님!
+            </div>
+            <div class="content_wrapper">
+                <div class="content_row">
+                    <div id="dashboard_welcome" class="dashboard_box">
+                        <div class="dashboard_title">월간 실적</div>
+                        <div class="dashboard_paragraph">
+                            일간 이용 고객 수는 36명으로, 지난 달 같은 시기보다 3명 적습니다.<br>
+                            Love Planet 직원 평가 시스템에 따르면 앞으로 5명의 고객을 더 유치해야 다음 달 Platinum 등급에 도달할 수 있습니다.
+    
+                        </div>
                     </div>
-                    <div class="menu_list">
-                        <ul id="menu_list_wrapper">
-                            <li>대시보드</li>
-                            <li>관리자 공지</li>
-                            <hr>
-                            <li>리뷰 관리</li>
-                            <li>러브코인 관리</li>
-                            <li>회원 관리</li>
-                            <hr>
-                            <li>시스템 관리 자료</li>
-                            <li>시스템 피드백</li>
+                    <div id="dashboard_lovecoin" class="dashboard_box">
+                        <div class="dashboard_title">LOVE COIN</div>
+                        <div id="lovecoin_chart_wrapper">
+                            <canvas id="lovecoin_chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_row">
+                    <div id="dashboard_reviews" class="dashboard_box">
+                        <div class="dashboard_title">최근 고객 리뷰</div>
+                        <ul>
+                            <li></li>
                         </ul>
                     </div>
                 </div>
             </div>
+            
         </div>
 
+        
+
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
 </body>
 </html>
