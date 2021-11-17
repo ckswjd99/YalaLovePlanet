@@ -1,5 +1,3 @@
-a { color: inherit; }
-
 .content {
     flex: 1;
 
@@ -70,63 +68,70 @@ a { color: inherit; }
     text-shadow: 0 2px 2px rgb(0, 0, 0, 0.1);
 }
 
-#dashboard_welcome {
-    flex: 1;
-
-    background-image: linear-gradient(to left bottom, #ffa1ad, #ff98a4, #ff8f9b, #ff8591, #ff7c87);
-}
-
-#dashboard_lovecoin {
-    flex: 1;
-
-    background-image: linear-gradient(to left bottom, #e490fb, #d08afc, #ba85fe, #a080ff, #827cff);
-
-    display: flex;
-    flex-direction: column;
-}
-
-#lovecoin_chart_wrapper {
-    flex: 1;
-}
-
-#dashboard_reviews {
+#dashboard_announce {
     flex: 1;
 
     background-color: white;
 }
 
-#dashboard_reviews .dashboard_title {
+#dashboard_announce .dashboard_title {
     color:rgb(126, 126, 126);
 }
 
-#dashboard_reviews ul {
+#dashboard_announce ul {
     color: rgb(66, 66, 66);
     padding: 0;
 }
 
-#dashboard_reviews ul li {
-    display: flex;
+#dashboard_announce ul li {
     background-color: rgb(255, 234, 234, 0);
     backdrop-filter: blur(5px);
     transition: all 0.3s;
 
     margin-bottom: 10px;
     padding: 10px 5px 10px 5px;
+
+    border-bottom: 2px solid lightgray;
+
+    display: flex;
+    flex-direction: column;
 }
-#dashboard_reviews ul li:hover {
-    background-color: rgb(255, 234, 234, 1);
-    
+#dashboard_announce ul li:hover {
     cursor: pointer;
 }
+#dashboard_announce ul li:last-child {
+    border-bottom: none;
+}
 
-#dashboard_reviews ul li .user_image {
-    width: 100px;
-    height: 100px;
+#dashboard_announce ul li .announce_header {
+    display: flex;
+    align-items: center;
+}
+
+#dashboard_announce ul li .announce_header .announce_title {
+    flex: 1;
+
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+#dashboard_announce ul li .announce_icon {
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
     border: 2px solid gray;
 }
 
-#dashboard_reviews ul li .review_box {
+#dashboard_announce ul li .announce_body {
+    padding: 10px;
+    margin-top: 15px;
+
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+    font-size: 17px;
+}
+
+#dashboard_announce ul li .review_box {
     flex: 1;
     height: 100px;
 
@@ -153,43 +158,4 @@ a { color: inherit; }
 .review_box .review_text {
     flex: 1;
     font-size: 20px;
-}
-
-#dashboard_reviews ul li .review_more {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    font-size: 17px;
-}
-
-
-.popup_review {
-    margin-top: 5%;
-    width: 700px;
-    height: 80%;
-
-    padding: 20px;
-}
-
-.popup_review_header {
-    
-}
-
-.popup_review_userphoto {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-}
-
-.popup_review_userinfo {
-
-}
-
-.popup_review_body {
-
-}
-
-.popup_review_footer {
-
 }

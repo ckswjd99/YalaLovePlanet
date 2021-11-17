@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/menu_template.css">
+    <link rel="stylesheet" href="stylesheets/overlay.css">
     <link rel="stylesheet" href="stylesheets/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,15 +23,15 @@
                 </div>
                 <div class="menu_list">
                     <ul id="menu_list_wrapper">
-                        <li>대시보드</li>
-                        <li>관리자 공지</li>
+                        <li><a href="/">대시보드</a></li>
+                        <li><a href="/announce">관리자 공지</a></li>
                         <hr>
-                        <li>리뷰 관리</li>
-                        <li>러브코인 관리</li>
-                        <li>회원 관리</li>
+                        <li><a href="/reviews">리뷰 관리</a></li>
+                        <li><a href="/lovecoin">러브코인 관리</a></li>
+                        <li><a href="/users">회원 관리</a></li>
                         <hr>
-                        <li>시스템 관리 자료</li>
-                        <li>시스템 피드백</li>
+                        <li><a href="/systemDocument">시스템 관리 자료</a></li>
+                        <li><a href="/systemFeedback">시스템 피드백</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,7 +62,57 @@
                     <div id="dashboard_reviews" class="dashboard_box">
                         <div class="dashboard_title">최근 고객 리뷰</div>
                         <ul>
-                            <li></li>
+                            <li onclick="overlayOn()">
+                                <img class="user_image" src="/images/user/01.jpg">
+                                <div class="review_box">
+                                    <div class="review_userinfo">
+                                        <p>자니</p>
+                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
+                                    </div>
+                                    <div class="review_text">
+                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="user_image" src="/images/user/01.jpg">
+                                <div class="review_box">
+                                    <div class="review_userinfo">
+                                        <p>자니</p>
+                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
+                                    </div>
+                                    <div class="review_text">
+                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="user_image" src="/images/user/01.jpg">
+                                <div class="review_box">
+                                    <div class="review_userinfo">
+                                        <p>자니</p>
+                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
+                                    </div>
+                                    <div class="review_text">
+                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="user_image" src="/images/user/01.jpg">
+                                <div class="review_box">
+                                    <div class="review_userinfo">
+                                        <p>자니</p>
+                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
+                                    </div>
+                                    <div class="review_text">
+                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="review_more"><a href="/reviews">+ 더보기</a></div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -74,5 +126,22 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="text/javascript" src="/javascripts/main.js"></script>
+
+    <div id="overlay" style="opacity: 0; display: none;" onclick="toggleSelf(this)">
+        <div class="popup_box popup_review">
+            <div class="popup_review_header">
+                <img class="popup_review_userphoto" src="/images/user/01.jpg">
+                <div class="popup_review_userinfo">
+                    
+                </div>
+            </div>
+            <div class="popup_review_body">
+                
+            </div>
+            <div class="popup_review_footer">
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -19,8 +19,8 @@ const data = {
     labels: labels,
     datasets: [{
         label: 'My First dataset',
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
+        backgroundColor: 'rgb(202, 74, 253)',
+        borderColor: 'rgb(241, 214, 252)',
         data: [10, 15, 0, 35, 20, 30, 45],
         tension: 0.3
     }]
@@ -73,3 +73,22 @@ const myChart = new Chart(
     lovecoin_chart,
     config
 );
+
+const toggleSelf = (self) => {
+    const visible = self.getAttribute("visible");
+    if(visible == "false" || !visible) {
+        self.setAttribute("visible", "true");
+        self.setAttribute("style", "opacity: 1;");
+    }
+    else {
+        self.setAttribute("visible", "false");
+        self.setAttribute("style", "opacity: 0; display: none");
+    }
+
+}
+
+const overlayOn = () => {
+    const overlay = document.getElementById('overlay');
+    overlay.setAttribute("visible", "true");
+    overlay.setAttribute("style", "opacity: 1;");
+}

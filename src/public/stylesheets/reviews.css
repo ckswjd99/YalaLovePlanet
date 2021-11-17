@@ -1,5 +1,3 @@
-a { color: inherit; }
-
 .content {
     flex: 1;
 
@@ -161,35 +159,4 @@ a { color: inherit; }
     justify-content: center;
 
     font-size: 17px;
-}
-
-
-.popup_review {
-    margin-top: 5%;
-    width: 700px;
-    height: 80%;
-
-    padding: 20px;
-}
-
-.popup_review_header {
-    
-}
-
-.popup_review_userphoto {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-}
-
-.popup_review_userinfo {
-
-}
-
-.popup_review_body {
-
-}
-
-.popup_review_footer {
-
 }
