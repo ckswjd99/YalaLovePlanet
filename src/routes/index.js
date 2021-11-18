@@ -14,4 +14,8 @@ router.get('/announce', function(req, res, next) {
   res.render('announce', { title: 'Express' });
 });
 
+router.get('/lovecoin', function(req, res, next) {
+  res.render('lovecoin', { title: 'Express' });
+});
+
 module.exports = router;

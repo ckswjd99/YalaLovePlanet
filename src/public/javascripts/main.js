@@ -6,37 +6,44 @@ const lovecoin_chart_sizer = () => {
 };
 lovecoin_chart_sizer();
 
-const labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-];
+const randBetween = (a, b) => Math.floor(Math.random() * (b-a) + a)
+
+const DATA_COUNT = 7;
+const NUMBER_CFG = { count: DATA_COUNT, min: -100, max: 100 };
+
+const labels = [1, 2, 3, 4, 5, 6, 7];
 const data = {
     labels: labels,
-    datasets: [{
-        label: 'My First dataset',
-        backgroundColor: 'rgb(202, 74, 253)',
-        borderColor: 'rgb(241, 214, 252)',
-        data: [10, 15, 0, 35, 20, 30, 45],
-        tension: 0.3
-    }]
+    datasets: [
+        {
+            label: 'Dataset 1',
+            data: [[-50, -30], [-90, -20], [-70, 20], [10, 70], [-50, 80], [20, 50], [50, 120]],
+            backgroundColor: 'rgb(255, 99, 132, 0.5)',
+            borderWidth: 2,
+            borderColor: 'rgb(255, 99, 132)',
+        },
+        {
+            label: 'Dataset 2',
+            data: [[-40, -20], [-130, -35], [-10, 30], [20, 50], [-30, 100], [20, 50], [50, 120]],
+            backgroundColor: 'rgb(54, 162, 235, 0.5)',
+            borderWidth: 2,
+            borderColor: 'rgb(54, 162, 235)',
+        },
+    ]
 };
 
 const config = {
-    type: 'line',
+    type: 'bar',
     data: data,
     options: {
+        responsive: true,
         plugins: {
-            title: {
-                display: false
-            },
             legend: {
-                display: false
-            }
+                display: false,
+            },
+            title: {
+                display: false,
+            },
         },
         scales: {
             y: {
@@ -69,6 +76,19 @@ const config = {
     }
 };
 
+// const actions = [
+//     {
+//         name: 'Randomize',
+//         handler(chart) {
+//             chart.data.datasets.forEach(dataset => {
+//                 dataset.data = chart.data.labels.map(() => {
+//                     return [Utils.rand(-100, 100), Utils.rand(-100, 100)];
+//                 });
+//             });
+//             chart.update();
+//         }
+//     },
+// ];
 const myChart = new Chart(
     lovecoin_chart,
     config
@@ -76,7 +96,7 @@ const myChart = new Chart(
 
 const toggleSelf = (self) => {
     const visible = self.getAttribute("visible");
-    if(visible == "false" || !visible) {
+    if (visible == "false" || !visible) {
         self.setAttribute("visible", "true");
         self.setAttribute("style", "opacity: 1;");
     }
