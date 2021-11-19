@@ -18,6 +18,9 @@ a { color: inherit; }
 .content_wrapper {
     overflow-y: scroll;
 
+    padding-left: 50px;
+    padding-right: 50px;
+
     -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 95%, rgba(0,0,0,0) 100%);
     -webkit-mask-size: 100%;
     -webkit-mask-repeat: no-repeat;
@@ -54,49 +57,132 @@ a { color: inherit; }
 
 .dashboard_title {
     color: white;
-    font-size: 40px;
-    padding-top: 10px;
-    padding-bottom: 12px;
+
+    font-size: 50px;
+    line-height: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     text-shadow: 0 3px 3px rgb(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
 
 .dashboard_paragraph {
-    color: white;
+    color: rgb(255, 255, 255, 0.7);
+
+    font-family: 'proxima-nova-extra-condensed' !important;
     font-size: 25px;
+    line-height: 20px;
     line-height: 1.7;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     text-shadow: 0 2px 2px rgb(0, 0, 0, 0.1);
+
+    font-weight: 100;
 }
 
-#dashboard_welcome {
+#dashboard_board1 {
     flex: 1;
-
+    
+    color: white;
     background-image: linear-gradient(to left bottom, #ffa1ad, #ff98a4, #ff8f9b, #ff8591, #ff7c87);
+    
+    display: flex;
+    flex-direction: column-reverse;
+    
+    height: 250px;
 }
 
-#dashboard_lovecoin {
+#dashboard_board1 img {
+    width: 180px;
+    height: 180px;
+
+    position: absolute;
+    top: -10px;
+    right: 15px;
+}
+
+#dashboard_board2 {
     flex: 1;
 
     background-image: linear-gradient(to left bottom, #e490fb, #d08afc, #ba85fe, #a080ff, #827cff);
 
     display: flex;
+    flex-direction: column-reverse;
+
+    height: 250px;
+}
+
+#dashboard_board2 img {
+    width: 140px;
+    height: 140px;
+
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+#dashboard_board3 {
+    flex: 1;
+    background-image: linear-gradient(to left bottom, #ffaf18, #ffbb42, #ffc661, #ffd17e, #ffdc9b);
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    height: 250px;
+}
+
+#dashboard_board3 img {
+    width: 140px;
+    height: 140px;
+
+    position: absolute;
+    top: 10px;
+    right: 35px;
+}
+
+#dashboard_lovecoin {
+    flex: 1;
+
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
     flex-direction: column;
 }
 
-#lovecoin_chart_wrapper {
+#dashboard_lovecoin .dashboard_title {
+    color:rgb(126, 126, 126);
+
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.lovecoin_chart_wrapper {
     flex: 1;
 }
 
 #dashboard_reviews {
-    flex: 1;
+    width: 400px;
 
-    background-color: white;
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 30px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 #dashboard_reviews .dashboard_title {
     color:rgb(126, 126, 126);
+
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 #dashboard_reviews ul {
@@ -107,7 +193,6 @@ a { color: inherit; }
 #dashboard_reviews ul li {
     display: flex;
     background-color: rgb(255, 234, 234, 0);
-    backdrop-filter: blur(5px);
     transition: all 0.3s;
 
     margin-bottom: 10px;
@@ -120,15 +205,15 @@ a { color: inherit; }
 }
 
 #dashboard_reviews ul li .user_image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
     border: 2px solid gray;
 }
 
 #dashboard_reviews ul li .review_box {
     flex: 1;
-    height: 100px;
+    height: 80px;
 
     padding-left: 20px;
     display: flex;
@@ -141,7 +226,7 @@ a { color: inherit; }
     display: flex;
     align-items: center;
     font-size: 25px;
-    line-height: 50px;
+    line-height: 35px;
 }
 
 .review_box .review_userinfo .user_grade_image {
@@ -151,8 +236,11 @@ a { color: inherit; }
 }
 
 .review_box .review_text {
+    opacity: 0.5;
+
     flex: 1;
     font-size: 20px;
+    line-height: 35px;
 }
 
 #dashboard_reviews ul li .review_more {

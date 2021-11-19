@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="stylesheets/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/hnd0qtt.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -23,15 +24,15 @@
                 </div>
                 <div class="menu_list">
                     <ul id="menu_list_wrapper">
-                        <li><a href="/">대시보드</a></li>
-                        <li><a href="/announce">관리자 공지</a></li>
+                        <li><a href="/">Dashboard</a></li>
+                        <li><a href="/announce">Notice</a></li>
                         <hr>
-                        <li><a href="/reviews">리뷰 관리</a></li>
-                        <li><a href="/lovecoin">러브코인 관리</a></li>
-                        <li><a href="/users">회원 관리</a></li>
+                        <li><a href="/reviews">Recent Reviews</a></li>
+                        <li><a href="/lovecoin">Lovecoin</a></li>
+                        <li><a href="/users">User Management</a></li>
                         <hr>
-                        <li><a href="/systemDocument">시스템 관리 자료</a></li>
-                        <li><a href="/systemFeedback">시스템 피드백</a></li>
+                        <li><a href="/systemDocument">System Document</a></li>
+                        <li><a href="/systemFeedback">System Feedback</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,24 +44,31 @@
             </div>
             <div class="content_wrapper">
                 <div class="content_row">
-                    <div id="dashboard_welcome" class="dashboard_box">
-                        <div class="dashboard_title">월간 실적</div>
-                        <div class="dashboard_paragraph">
-                            일간 이용 고객 수는 36명으로, 지난 달 같은 시기보다 3명 적습니다.<br>
-                            Love Planet 직원 평가 시스템에 따르면 앞으로 5명의 고객을 더 유치해야 다음 달 Platinum 등급에 도달할 수 있습니다.
-    
-                        </div>
+                    <div id="dashboard_board1" class="dashboard_box">
+                        <img src="images/icon01.png">
+                        <div class="dashboard_title">573,759</div>
+                        <div class="dashboard_paragraph">Recently Joined</div>
                     </div>
-                    <div id="dashboard_lovecoin" class="dashboard_box">
-                        <div class="dashboard_title">LOVE COIN</div>
-                        <div id="lovecoin_chart_wrapper">
-                            <canvas id="lovecoin_chart"></canvas>
-                        </div>
+                    <div id="dashboard_board2" class="dashboard_box">
+                        <img src="images/icon02.png">
+                        <div class="dashboard_title">45,302</div>
+                        <div class="dashboard_paragraph">Matched Couples</div>
+                    </div>
+                    <div id="dashboard_board3" class="dashboard_box">
+                        <div class="dashboard_icon"><img src="images/icon03.png"></div>
+                        <div class="dashboard_title">$ 1,098,439</div>
+                        <div class="dashboard_paragraph">Total Revenue</div>
                     </div>
                 </div>
                 <div class="content_row">
+                    <div id="dashboard_lovecoin" class="dashboard_box">
+                        <div class="dashboard_title">Love Coin</div>
+                        <div class="lovecoin_chart_wrapper">
+                            <canvas id="lovecoin_chart"></canvas>
+                        </div>
+                    </div>
                     <div id="dashboard_reviews" class="dashboard_box">
-                        <div class="dashboard_title">최근 고객 리뷰</div>
+                        <div class="dashboard_title">Reviews</div>
                         <ul>
                             <li onclick="overlayOn()">
                                 <img class="user_image" src="/images/user/01.jpg">
@@ -70,11 +78,11 @@
                                         <img class="user_grade_image" src="/images/grades/sapphire.jpg">
                                     </div>
                                     <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
+                                        About. Jessica님
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li onclick="overlayOn()">
                                 <img class="user_image" src="/images/user/01.jpg">
                                 <div class="review_box">
                                     <div class="review_userinfo">
@@ -82,11 +90,11 @@
                                         <img class="user_grade_image" src="/images/grades/sapphire.jpg">
                                     </div>
                                     <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
+                                        활달하고 사교성이 좋아
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li onclick="overlayOn()">
                                 <img class="user_image" src="/images/user/01.jpg">
                                 <div class="review_box">
                                     <div class="review_userinfo">
@@ -94,11 +102,11 @@
                                         <img class="user_grade_image" src="/images/grades/sapphire.jpg">
                                     </div>
                                     <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
+                                        활달하고 사교성이 좋아
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            <li onclick="overlayOn()">
                                 <img class="user_image" src="/images/user/01.jpg">
                                 <div class="review_box">
                                     <div class="review_userinfo">
@@ -106,10 +114,11 @@
                                         <img class="user_grade_image" src="/images/grades/sapphire.jpg">
                                     </div>
                                     <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
+                                        활달하고 사교성이 좋아
                                     </div>
                                 </div>
                             </li>
+                            
                             <li>
                                 <div class="review_more"><a href="/reviews">+ 더보기</a></div>
                             </li>
@@ -125,7 +134,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script type="text/javascript" src="/javascripts/main.js"></script>
+    
+    <script type="text/javascript" src="/javascripts/coin.js"></script>
 
     <div id="overlay" style="opacity: 0; display: none;" onclick="toggleSelf(this)">
         <div class="popup_box popup_review">

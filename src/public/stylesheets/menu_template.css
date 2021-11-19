@@ -1,10 +1,26 @@
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YiSunShinDotumM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinDotumM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
     background-image: url('/images/gradient_pink_green.jpg');
     background-size: cover;
 
-    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'proxima-nova', 'proxima-nova-extra-condensed', 'YiSunShinDotumM', monospace;
 
     overflow: hidden;
 }
@@ -28,7 +44,7 @@ ul {
 
 .menu {
     width: 350px;
-    padding: 30px 15px 0px 0px;
+    padding: 30px 15px 30px 15px;   
 }
 
 .menu_box {
@@ -38,7 +54,7 @@ ul {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
-    border-top-right-radius: 30px;
+    border-radius: 30px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 }
