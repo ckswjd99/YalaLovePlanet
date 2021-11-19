@@ -17,10 +17,11 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('/images/gradient_pink_green.jpg');
+    /* background-image: url('/images/gradient_pink_green.jpg');*/
+    background-color: rgb(255, 230, 230);
     background-size: cover;
 
-    font-family: 'proxima-nova', 'proxima-nova-extra-condensed', 'YiSunShinDotumM', monospace;
+    font-family: 'proxima-nova', 'proxima-nova-extra-condensed',  'YiSunShinDotumM', monospace;
 
     overflow: hidden;
 }

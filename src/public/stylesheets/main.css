@@ -225,13 +225,14 @@ a { color: inherit; }
 
     display: flex;
     align-items: center;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 35px;
 }
 
 .review_box .review_userinfo .user_grade_image {
     width: 40px;
     height: 40px;
+    margin-left: 5px;
     
 }
 
@@ -239,7 +240,7 @@ a { color: inherit; }
     opacity: 0.5;
 
     flex: 1;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 35px;
 }
 
