@@ -18,4 +18,20 @@ router.get('/lovecoin', function(req, res, next) {
   res.render('lovecoin', { title: 'Express' });
 });
 
+router.get('/users', function(req, res, next) {
+  res.render('users', { title: 'Express' });
+});
+
+router.get('/newUser', function(req, res, next) {
+  res.render('newUser', { title: 'Express' });
+});
+
+router.get('/userShow', function(req, res, next) {
+  res.render('userShow', { title: 'Express' });
+});
+
+router.get('/snsAnalysis', function(req, res, next) {
+  res.render('snsAnalysis', { title: 'Express' });
+});
+
 module.exports = router;

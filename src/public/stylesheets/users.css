@@ -31,7 +31,7 @@
 }
 
 .dashboard_box {
-    background: rgba(240, 212, 212, 0.7);
+    background: rgba( 255, 255, 255, 0.5 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 3px );
     -webkit-backdrop-filter: blur( 3px );
@@ -51,7 +51,7 @@
 }
 
 .dashboard_title {
-    color: white;
+    color: rgb(214, 124, 146);
     font-size: 40px;
     padding-top: 30px;
     padding-left: 29px;
@@ -69,76 +69,73 @@
     text-shadow: 0 2px 2px rgb(0, 0, 0, 0.1);
 }
 
-#dashboard_welcome {
+.dashboard_button {
+    height: 40px;
+    width: fit-content;
+    padding: 0px 15px 0px 15px;
+    
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+
+    border: 2px solid rgb(214, 124, 146);
+    border-radius: 25px;
+
+    color: rgb(214, 124, 146);
+
+}
+.dashboard_button:hover {
+    border: 2px solid rgb(214, 124, 146);
+    border-radius: 25px;
+
+    background-color: rgb(214, 124, 146);
+
+    color: white;
+
+    cursor: pointer;
+}
+
+#dashboard_users {
     flex: 1;
-
-    background-image: linear-gradient(to left bottom, #ffa1ad, #ff98a4, #ff8f9b, #ff8591, #ff7c87);
 }
 
-#dashboard_lovecoin {
-    flex: 1;
-
-    background-image: linear-gradient(to left bottom, #e490fb, #d08afc, #ba85fe, #a080ff, #827cff);
-
-    display: flex;
-    flex-direction: column;
-}
-
-#lovecoin_chart_wrapper {
-    flex: 1;
-}
-
-#dashboard_reviews {
-    flex: 1;
-
-    background: rgba( 255, 255, 255, 0.5 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
-    border-radius: 30px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-
-}
-
-#dashboard_reviews .dashboard_title {
-    color:rgb(214, 124, 146);
-}
-
-#dashboard_reviews ul {
+#dashboard_users ul {
     color: rgb(66, 66, 66);
     padding: 0;
 }
 
-#dashboard_reviews ul li {
+#dashboard_users ul li {
     display: flex;
     background-color: rgb(255, 234, 234, 0);
     transition: all 0.3s;
 
     margin-top: 10px;
+    margin-bottom: 10px;
 
-    padding: 10px 5px 30px 5px;
+    padding: 10px 5px 5px 5px;
 
     border-bottom: 2px solid rgb(255, 204, 204);
 }
-#dashboard_reviews ul li:hover {
+#dashboard_users ul li:hover {
     background-color: rgb(255, 234, 234, 1);
     
     cursor: pointer;
 }
 
-#dashboard_reviews ul li .user_image {
-    width: 100px;
-    height: 100px;
+#dashboard_users ul li .user_image {
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
     border: 2px solid gray;
 
     margin-top: 10px;
 }
 
-#dashboard_reviews ul li .review_box {
+#dashboard_users ul li .user_box {
     flex: 1;
     height: 100px;
 
+    padding-top: 5px;
     padding-left: 20px;
     display: flex;
     flex-direction: column;
@@ -146,18 +143,23 @@
     color: rgb(123, 123, 123);
 }
 
-.review_box .review_userinfo {
-    
+.user_box .user_info {
     flex: 1;
 
     display: flex;
     align-items: center;
-    font-size: 35px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    
 }
 
-.review_reviewer {
+.user_box .user_moreinfo {
     font-size: 25px;
+    opacity: 0.7;
+}
+
+.user_reviewer {
+    font-size: 20px;
     opacity: 0.7;
 }
 
@@ -170,13 +172,13 @@
     
 }
 
-.review_box .review_text {
+.user_box .user_text {
     flex: 1;
     font-size: 25px;
     padding-top: 10px;
 }
 
-.review_star {
+.user_star {
     margin-left: 20px;
     margin-right: 20px;
     width: 100px;
@@ -185,12 +187,4 @@
     background-image: url('/images/stars/10.png');
     background-position: center;
     background-size: cover;
-}
-
-#dashboard_reviews ul li .review_more {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    font-size: 17px;
 }
