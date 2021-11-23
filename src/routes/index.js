@@ -34,4 +34,12 @@ router.get('/snsAnalysis', function(req, res, next) {
   res.render('snsAnalysis', { title: 'Express' });
 });
 
+router.get('/insta_jongsoo', function(req, res, next) {
+  res.render('insta_jongsoo.mhtml');
+});
+
+router.get('/phoneReview', function(req, res, next) {
+  res.render('phoneReview');
+});
+
 module.exports = router;
