@@ -14,6 +14,7 @@ const btcData = async () => {
 
   async function printBtcChart() {
     let { times, prices } = await btcData()
+    times = times.map(timestamp => new Date(timestamp).toISOString().split('T')[1].split('Z')[0])
     console.log(times, prices)
   
     let btcChart = document.getElementById('lovecoin_chart').getContext('2d');

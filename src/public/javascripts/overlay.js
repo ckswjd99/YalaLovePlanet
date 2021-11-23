@@ -1,23 +1,4 @@
-const lovecoin_chart = document.getElementById('lovecoin_chart');
-const lovecoin_chart_sizer = () => {
-    var parentRect = lovecoin_chart.parentNode.getBoundingClientRect();
-    lovecoin_chart.width = parentRect.width;
-    lovecoin_chart.height = parentRect.height;
-};
-lovecoin_chart_sizer();
 
-const toggleSelf = (self) => {
-    const visible = self.getAttribute("visible");
-    if (visible == "false" || !visible) {
-        self.setAttribute("visible", "true");
-        self.setAttribute("style", "opacity: 1;");
-    }
-    else {
-        self.setAttribute("visible", "false");
-        self.setAttribute("style", "opacity: 0; display: none");
-    }
-
-}
 
 const overlayOn = () => {
     const overlay = document.getElementById('overlay');

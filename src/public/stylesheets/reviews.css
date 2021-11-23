@@ -182,10 +182,21 @@
     width: 100px;
     height: 20px;
 
-    background-image: url('/images/stars/10.png');
     background-position: center;
     background-size: cover;
 }
+
+
+.star10 { background-image: url('/images/stars/10.png'); }
+.star9 { background-image: url('/images/stars/9.png'); }
+.star8 { background-image: url('/images/stars/8.png'); }
+.star7 { background-image: url('/images/stars/7.png'); }
+.star6 { background-image: url('/images/stars/6.png'); }
+.star5 { background-image: url('/images/stars/5.png'); }
+.star4 { background-image: url('/images/stars/4.png'); }
+.star3 { background-image: url('/images/stars/3.png'); }
+.star2 { background-image: url('/images/stars/2.png'); }
+.star1 { background-image: url('/images/stars/1.png'); }
 
 #dashboard_reviews ul li .review_more {
     width: 100%;

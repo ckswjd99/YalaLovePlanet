@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/menu_template.css">
     <link rel="stylesheet" href="stylesheets/reviews.css">
+    <link rel="stylesheet" href="stylesheets/overlay.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
@@ -23,7 +24,7 @@
                     
                 <div class="menu_top">
                     <p id="menu_top_text">🤍 Love Planet</p>
-                    <img id="menu_top_image" src="images/jessica_temp.png">
+                    <img id="menu_top_image" src="images/user/05.jpg">
                 </div>
                 <div class="menu_list">
                     <ul id="menu_list_wrapper">
@@ -47,12 +48,12 @@
                     <div id="dashboard_reviews" class="dashboard_box">
                         <div class="dashboard_title">Recent Reviews</div>
                         <ul>
-                            <li>
-                                <img class="user_image" src="/images/user/01.jpg">
+                            <li onclick="overlayOn()">
+                                <img class="user_image" src="/images/user/05.jpg">
                                 <div class="review_box">
                                     <div class="review_userinfo">
                                         <p>Jessica</p>
-                                        <div class="review_star"></div>
+                                        <div class="review_star star8"></div>
                                         <p class="review_reviewer">By. 자니</p>
                                     </div>
                                     <div class="review_text">
@@ -60,123 +61,42 @@
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <img class="user_image" src="/images/user/01.jpg">
+                            <li onclick="overlayOn()">
+                                <img class="user_image" src="/images/user/03.jpg">
                                 <div class="review_box">
                                     <div class="review_userinfo">
-                                        <p>자니</p>
-                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
+                                        <p>이종수</p>
+                                        <div class="review_star star4"></div>
+                                        <p class="review_reviewer">By. 존버</p>
                                     </div>
                                     <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
+                                        항상 자신감 있고 주변 사람들한테 관심이 많은 분이다. 근데 과하게 친한 척하면서 이것저것 참견하고 다닐 때는 솔직히 꼴보기 싫다. 아바타 눈만 봐도 기빨림. 함정은...
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <img class="user_image" src="/images/user/01.jpg">
+                            <li onclick="overlayOn()">
+                                <img class="user_image" src="/images/user/03.jpg">
                                 <div class="review_box">
                                     <div class="review_userinfo">
-                                        <p>자니</p>
-                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
+                                        <p>이종수</p>
+                                        <div class="review_star star6"></div>
+                                        <p class="review_reviewer">By. 씹년지기</p>
                                     </div>
                                     <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
+                                        얘랑 십 년 넘게 알고 지내다가 손절했음. 씹팔 조까튼 새끼. 자기 필요할 때만 친구고 단물 다 빠지면 사람 취급도 안 하는 게, 뭐 핵인싸? 말 같지도 않음.
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <img class="user_image" src="/images/user/01.jpg">
+                            <li onclick="overlayOn()">
+                                <img class="user_image" src="/images/user/03.jpg">
                                 <div class="review_box">
                                     <div class="review_userinfo">
-                                        <p>자니</p>
-                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
+                                        <p>이종수</p>
+                                        <div class="review_star star10"></div>
+                                        <p class="review_reviewer">By. 댕청이</p>
                                     </div>
                                     <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <img class="user_image" src="/images/user/01.jpg">
-                                <div class="review_box">
-                                    <div class="review_userinfo">
-                                        <p>자니</p>
-                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
-                                    </div>
-                                    <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <img class="user_image" src="/images/user/01.jpg">
-                                <div class="review_box">
-                                    <div class="review_userinfo">
-                                        <p>자니</p>
-                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
-                                    </div>
-                                    <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <img class="user_image" src="/images/user/01.jpg">
-                                <div class="review_box">
-                                    <div class="review_userinfo">
-                                        <p>자니</p>
-                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
-                                    </div>
-                                    <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <img class="user_image" src="/images/user/01.jpg">
-                                <div class="review_box">
-                                    <div class="review_userinfo">
-                                        <p>자니</p>
-                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
-                                    </div>
-                                    <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <img class="user_image" src="/images/user/01.jpg">
-                                <div class="review_box">
-                                    <div class="review_userinfo">
-                                        <p>자니</p>
-                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
-                                    </div>
-                                    <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <img class="user_image" src="/images/user/01.jpg">
-                                <div class="review_box">
-                                    <div class="review_userinfo">
-                                        <p>자니</p>
-                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
-                                    </div>
-                                    <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <img class="user_image" src="/images/user/01.jpg">
-                                <div class="review_box">
-                                    <div class="review_userinfo">
-                                        <p>자니</p>
-                                        <img class="user_grade_image" src="/images/grades/sapphire.jpg">
-                                    </div>
-                                    <div class="review_text">
-                                        활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만...
+                                        호구력 만점. 가성비 만점. 절대 피곤할 일 없어요. 결혼 보험용으로 강추.
                                     </div>
                                 </div>
                             </li>
@@ -190,6 +110,28 @@
 
         
 
+    </div>
+
+    <script type="text/javascript" src="/javascripts/overlay.js"></script>
+
+    <div id="overlay" style="opacity: 0; display: none;">
+        <div class="popup_box popup_review">
+            <div class="popup_review_header">
+                <img class="popup_review_userphoto" src="/images/user/05.jpg">
+                <div class="popup_review_userinfo">
+                    About. Jessica<br>
+                    <div class="popup_review_star"></div>
+                </div>
+            </div>
+            <div class="popup_review_body">
+                <textarea id="reveiw_textarea">제시카 님의 성격. 활달하고 사교성이 좋아 처음 보는 사람과도 금방 친구가 됩니다. 저도 처음 만났을 때 제시카의 밝고 친근한 모습에 반해 호감을 갖게 됐어요. 하지만 연인이 되고 나니 그런 성격이 마냥 좋기만 한 건 아니더라고요. 모두에게 친절한 여자, 친구와 애인에게 똑같이 구는 여자는 생각보다 제가 감당하기 어려웠어요. 제시카가 소위 남사친이라는 사람들 네 명이랑 여행을 가서 연락이 두절됐을 때는 진짜 이게 장난이 아니구나 싶었죠. 아니 이 썅년이 전화를 밤새도록 꺼놓은 거예요...</textarea>
+            </div>
+            <div class="popup_review_footer">
+                <div class="popup_button" onclick="overlayTextColor()">수정</div>
+                <div class="popup_button" onclick="overlayReturnColor()">삭제</div>
+                <div class="popup_button" onclick="overlayOff()">닫기</div>
+            </div>
+        </div>
     </div>
 
 </body>

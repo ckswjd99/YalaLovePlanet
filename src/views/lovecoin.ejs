@@ -41,10 +41,10 @@
                 <div id="chart_wrapper" class="dashboard_box">
                     <div class="dashboard_title">러브코인 LVC</div>
                     <div id="chart_header">
-                        <p>현재 가격: 5.0893$ / 24시간 전 대비 </p><p style="color:red;">▼0.012$ (1.43%)</p>
+                        <p>현재 가격: $ 5.0893 / 24시간 전 대비 </p><p style="color:red;">▼0.012$ (1.43%)</p>
                     </div>
                     <div id="chart">
-                        <canvas id="chart_canvas"></canvas>
+                        <canvas id="lovecoin_chart"></canvas>
                     </div>
                 </div>
                 <div id="chart_order" class="dashboard_box">
@@ -119,7 +119,17 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script type="text/javascript" src="/javascripts/lovecoin.js"></script>
+    <script type="text/javascript" src="/javascripts/coin.js"></script>
+
+    <script>
+        const lovecoin_chart = document.getElementById('lovecoin_chart');
+        const lovecoin_chart_sizer = () => {
+            var parentRect = lovecoin_chart.parentNode.getBoundingClientRect();
+            lovecoin_chart.width = parentRect.width;
+            lovecoin_chart.height = parentRect.height;
+        };
+        lovecoin_chart_sizer();
+    </script>
 
 </body>
 </html>
