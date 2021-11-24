@@ -27,7 +27,7 @@
 .popup_review {
     margin-top: 5%;
     width: 700px;
-    height: 80%;
+    height: 82%;
 
     padding: 20px;
 }
@@ -36,6 +36,9 @@
     display: flex;
 
     margin-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .popup_review_userinfo {
@@ -54,10 +57,21 @@
 .popup_review_star {
     width: 160px;
     height: 40px;
-    background-image: url("/images/stars/10.png");
     background-position: center;
     background-size: cover;
 }
+
+
+.popup_review_star10 { background-image: url('/images/stars/10.png'); }
+.popup_review_star9 { background-image: url('/images/stars/9.png'); }
+.popup_review_star8 { background-image: url('/images/stars/8.png'); }
+.popup_review_star7 { background-image: url('/images/stars/7.png'); }
+.popup_review_star6 { background-image: url('/images/stars/6.png'); }
+.popup_review_star5 { background-image: url('/images/stars/5.png'); }
+.popup_review_star4 { background-image: url('/images/stars/4.png'); }
+.popup_review_star3 { background-image: url('/images/stars/3.png'); }
+.popup_review_star2 { background-image: url('/images/stars/2.png'); }
+.popup_review_star1 { background-image: url('/images/stars/1.png'); }
 
 .popup_review_body{
     margin-bottom: 30px;
@@ -107,4 +121,12 @@ textarea::selection {
     margin-left: 10px;
 
     cursor: pointer;
+}
+
+.by {
+    position: absolute;
+    right: 0;
+    
+    font-size: 25px;
+    color: gray;
 }

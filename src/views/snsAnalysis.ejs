@@ -41,30 +41,65 @@
             <div class="content_row">
                 <div id="overall_result" class="dashboard_box">
                     <div class="dashboard_title">SNS Analysis Result</div>
-                    <div class="stack_row">
-                        <p class="result_text">총 30,049명의 팔로워 중 실제 교류가 있는 계정은 30명 이내입니다.</p>
-                        <div style="flex: 1; height: 200px; margin-left: 20px;"><canvas id="chart1_1"></canvas></div>
+                    <div class="loading">
+                        <div class="loader"></div>
+                        <p>분석중...</p>
                     </div>
-                    
+                    <div class="arrange_row" style="display: none;">
+                        <p class="result_text">총 30,049명의 팔로워 중 실제 교류가 있는 계정은 30명 이내입니다.</p>
+                        <div style="width: 600px; height: 350px; margin-left: 20px;"><canvas style="width: 600px; height: 300px;" id="chart1_1"></canvas></div>
+                    </div>
                 </div>
-                
             </div>
+
             <div class="content_row" style="height: fit-content;">
                 <div id="insta_result" class="dashboard_box">
                     <div class="dashboard_title">Instagram</div>
-                    <div class="stack_row">
-
-                        <div class="dashboard_paragraph">
+                    <div class="loading">
+                        <div class="loader"></div>
+                        <p>분석중...</p>
+                    </div>
+                    <div class="arrange_row" style="display: none;">
+                        <p class="result_text">
+                            이종수 (@strong_jongsoo) 님의<br>인스타그램 계정 분석 결과,<br>
+                            <br>
                             게시글 16 / 팔로워 30.0K / 팔로우 48<br>
-                            실질 팔로워 38 (0.127%)
-                        </div>
-                        <div style="flex: 1; height: 500px; margin-left: 20px;"><canvas height="500px" id="chart1_2"></canvas></div>
+                            실질 팔로워 38 (0.127%)<br>
+                            <br>
+                            으로 유효 교류가 적습니다.
+                        </p>
+                        <div style="height: 350px; margin-right: 20px;"><canvas id="chart1_2"></canvas></div>
+                        <div style="height: 350px; margin-right: 20px;"><canvas id="chart1_3"></canvas></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_row" style="height: fit-content;">
+                <div id="insta_result" class="dashboard_box">
+                    <div class="dashboard_title">Facebook</div>
+                    <div class="loading">
+                        <div class="loader"></div>
+                        <p>분석중...</p>
+                    </div>
+                    <div class="arrange_row" style="display: none;">
+                        <p class="result_text">
+                            이종수 (jongsoo34) 님의 페이스북 <br>계정 분석 결과,<br>
+                            <br>
+                            게시글 16 / 친구 10,193 <br>
+                            반응 지수 32/1,845 (1.734%)<br>
+                            <br>
+                            으로 유의미한 친밀도가 낮습니다.
+                        </p>
+                        <div style="height: 350px; margin-right: 20px;"><canvas id="chart2_2"></canvas></div>
+                        <div style="height: 350px; margin-right: 20px;"><canvas id="chart2_3"></canvas></div>
                     </div>
                 </div>
             </div>
             
             
         </div>
+
+        
 
         
     </div>
