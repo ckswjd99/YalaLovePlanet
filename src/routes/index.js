@@ -35,7 +35,7 @@ router.get('/snsAnalysis', function(req, res, next) {
 });
 
 router.get('/insta_jongsoo', function(req, res, next) {
-  res.render('insta_jongsoo.mhtml');
+  res.render('insta_jongsoo/insta_jongsoo');
 });
 
 router.get('/phoneReview', function(req, res, next) {
